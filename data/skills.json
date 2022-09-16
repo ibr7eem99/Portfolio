@@ -1,0 +1,29 @@
+{
+    "data": [
+        {
+            "name":"HTML + CSS",
+            "type": "Coding skills",
+            "rate": "85%"
+        },
+        {
+            "name":"JavaScript",
+            "type": "Coding skills",
+            "rate": "80%"
+        },
+        {
+            "name":"TypeScript",
+            "type": "Coding skills",
+            "rate": "90%"
+        },
+        {
+            "name":"Asp.net Web API",
+            "type": "Coding skills",
+            "rate": "75%"
+        },
+        {
+            "name":"Angular",
+            "type": "Coding skills",
+            "rate": "70%"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "data": [
+        {
+            "name": "Applied Science University",
+            "type": "Education",
+            "role": "Bachelor's Degree of Software Engineering",
+            "duration": "Oct 2018 - 2022",
+            "description": "GPA 85.50 %"
+        },
+        {
+            "name": "Tahaluf Al Emarat Technical Solutions",
+            "type": "Experience",
+            "role": "Full-stack web Developer Training",
+            "duration": "May 2021 – Sep 2021",
+            "description": "I was trained to be a full-stack web developer using Bootstrap, Angular, TypeScript, Asp.net Core Web API, etc."
+        },
+        {
+            "name": "Barzan Technology Solution",
+            "type": "Experience",
+            "role": "Full-stack web & mobile Developer Training",
+            "duration": "July 2022 – Oct 2022",
+            "description": "I was trained to be a full-stack web & mobile developer using Asp.net framework Web API, Asp.net framework MVC and flutter mobile application."
+        }
+    ]
+}

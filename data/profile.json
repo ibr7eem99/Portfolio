@@ -1,0 +1,14 @@
+{
+    "data": {
+        "fullName": "Ibraheem Fatayer",
+        "role": "Full stack web developer",
+        "description": "I am a Software Engineering Fresh Graduate. I have a passion for web development, I’m learning to improve my knowledge. I can work within a team to achieve a certain objective on time.",
+        "photo": "",
+        "cv": "../assets/docs/CV.pdf",
+        "contact": {
+            "Address": "Al Kuliyah Al Islamiyah, Al Jubeiha Amman, Jordan",
+            "Email": "ibraheem.7azem@gmail.com",
+            "Phone": "(+962) 790065836"
+        }
+    }
+}

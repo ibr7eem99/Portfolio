@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Portfolio</title>
+
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/themify-icons.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+        integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+        integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/virtual.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/topbar.virtual.css">
+</head>
+
+<body class="theme-red">
+    <!-- Back to top button -->
+    <div class="btn-back_to_top">
+        <span class="ti-arrow-up"></span>
+    </div>
+
+    <header class="vg-page page-home" id="home" style="background-image: url(../assets/img/bg_image_1.jpg)"></header>
+
+    <div class="vg-page page-about" id="about">
+        <div class="container py-5" id="profile"></div>
+
+        <div class="container py-5" id="skill">
+            <h1 class="text-center fw-normal wow fadeIn">My Skills</h1>
+<div class="row py-3 justify-content-center" id="skills"></div>
+        </div>
+
+        <div class="container pt-5" id="person-life-time">
+            <div class="row inner-life-time-container"></div>
+        </div>
+    </div>
+
+    <div class="vg-page page-funfact" style="background-image: url(../assets/img/bg_banner.jpg); height: 250px;"></div>
+
+    <!-- Portfolio page -->
+    <div class="vg-page page-portfolio" id="portfolio">
+        <div class="container">
+            <div class="text-center wow fadeInUp">
+                <div class="badge badge-subhead">Portfolio</div>
+            </div>
+            <h1 class="text-center fw-normal wow fadeInUp">See my work</h1>
+            <div class="filterable-button py-3 wow fadeInUp" data-toggle="selected">
+                <button class="btn btn-theme-outline selected" data-filter="*">All</button>
+                <button class="btn btn-theme-outline" data-filter=".apps">Apps</button>
+                <button class="btn btn-theme-outline" data-filter=".template">Template</button>
+                <button class="btn btn-theme-outline" data-filter=".ios">IOS</button>
+                <button class="btn btn-theme-outline" data-filter=".ui-ux">UI/UX</button>
+                <button class="btn btn-theme-outline" data-filter=".graphic">Graphic</button>
+                <button class="btn btn-theme-outline" data-filter=".wireframes">Wireframes</button>
+            </div>
+
+            <div class="gridder my-3">
+                <div class="grid-item apps wow zoomIn">
+                    <div class="img-place" data-src="assets/img/work/work-1.jpg" data-fancybox
+                        data-caption="<h5 class='fg-theme'>Mobile Travel App</h5> <p>Travel, Discovery</p>">
+                        <img src="assets/img/work/work-1.jpg" alt="">
+                        <div class="img-caption">
+                            <h5 class="fg-theme">Mobile Travel App</h5>
+                            <p>Travel, Discovery</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item template wireframes wow zoomIn">
+                    <div class="img-place" data-src="assets/img/work/work-2.jpg" data-fancybox
+                        data-caption="<h5 class='fg-theme'>Music App</h5> <p>Musics</p>">
+                        <img src="assets/img/work/work-2.jpg" alt="">
+                        <div class="img-caption">
+                            <h5 class="fg-theme">Music App</h5>
+                            <p>Musics</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item apps ios wow zoomIn">
+                    <div class="img-place" data-src="assets/img/work/work-3.jpg" data-fancybox
+                        data-caption="<h5 class='fg-theme'>Gaming Dashboard</h5> <p>Games, Streaming</p>">
+                        <img src="assets/img/work/work-3.jpg" alt="">
+                        <div class="img-caption">
+                            <h5 class="fg-theme">Gaming Dashboard</h5>
+                            <p>Games, Streaming</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item graphic ui-ux wow zoomIn">
+                    <div class="img-place" data-src="assets/img/work/work-4.jpg" data-fancybox
+                        data-caption="<h5 class='fg-theme'>Drugs Delivery App</h5> <p>Health, Drugs</p>">
+                        <img src="assets/img/work/work-4.jpg" alt="">
+                        <div class="img-caption">
+                            <h5 class="fg-theme">Drugs Delivery App</h5>
+                            <p>Health, Drugs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item apps ios wow zoomIn">
+                    <div class="img-place" data-src="assets/img/work/work-5.jpg" data-fancybox
+                        data-caption="<h5 class='fg-theme'>Musics Discover</h5> <p>Musics, Dashboard</p>">
+                        <img src="assets/img/work/work-5.jpg" alt="">
+                        <div class="img-caption">
+                            <h5 class="fg-theme">Musics Discover</h5>
+                            <p>Musics, Dashboard</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item graphic ui-ux wireframes wow zoomIn">
+                    <div class="img-place" data-src="assets/img/work/work-6.jpg" data-fancybox
+                        data-caption="<h5 class='fg-theme'>Game Streaming</h5> <p>Games, Streaming</p>">
+                        <img src="assets/img/work/work-6.jpg" alt="">
+                        <div class="img-caption">
+                            <h5 class="fg-theme">Game Streaming</h5>
+                            <p>Games, Streaming</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End gridder -->
+            <div class="text-center wow fadeInUp">
+                <a href="javascript:void(0)" class="btn btn-theme">Load More</a>
+            </div>
+        </div>
+    </div> <!-- End Portfolio page -->
+
+    <!-- Testimonial -->
+    <div class="vg-page page-testimonial">
+        <div class="container">
+            <h1 class="text-center fw-normal wow fadeInUp">What Clients are Saying</h1>
+            <div class="row justify-content-center mt-5 wow fadeInUp">
+                <div class="col-md-9">
+                    <div class="owl-carousel testi-carousel">
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="img-place">
+                                        <img src="assets/img/testimonials/testimonials_1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="caption">
+                                        <div class="testi-content">There are many variations of passages of Lorem Ipsum
+                                            available, but the majority have suffered</div>
+                                        <div class="testi-info">
+                                            <div class="thumb-profile">
+                                                <img src="assets/img/testimonials/testimonials_1.jpg" alt="">
+                                            </div>
+                                            <div class="tagline">
+                                                <h5 class="mb-0">Satria Nugraha</h5>
+                                                <span class="text-muted">CEO Nutshell</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="img-place">
+                                        <img src="assets/img/testimonials/testimonials_2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="caption">
+                                        <div class="testi-content">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                            elit. Saepe natus expedita ab facilis ut, animi explicabo amet. Voluptatibus
+                                            possimus iste enim, doloremque, fugiat accusamus nisi optio fugit ratione
+                                            expedita harum?</div>
+                                        <div class="testi-info">
+                                            <div class="thumb-profile">
+                                                <img src="assets/img/testimonials/testimonials_2.jpg" alt="">
+                                            </div>
+                                            <div class="tagline">
+                                                <h5 class="mb-0">Selena Arrini</h5>
+                                                <span class="text-muted">CEO BigTree</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End testimonial -->
+
+    <!-- Blog -->
+    <!-- <div class="vg-page page-blog" id="blog">
+        <div class="container">
+            <div class="text-center">
+                <div class="badge badge-subhead wow fadeInUp">Blog</div>
+            </div>
+            <h1 class="text-center fw-normal wow fadeInUp">Latest Post</h1>
+            <div class="row post-grid">
+                <div class="col-md-6 col-lg-4 wow fadeInUp">
+                    <div class="card">
+                        <div class="img-place">
+                            <img src="assets/img/work/work-9.jpg" alt="">
+                        </div>
+                        <div class="caption">
+                            <a href="javascript:void(0)" class="post-category">Technology</a>
+                            <a href="#" class="post-title">Invision design forward fund</a>
+                            <span class="post-date"><span class="sr-only">Published on</span> May 22, 2018</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp">
+                    <div class="card">
+                        <div class="img-place">
+                            <img src="assets/img/work/work-6.jpg" alt="">
+                        </div>
+                        <div class="caption">
+                            <a href="javascript:void(0)" class="post-category">Business</a>
+                            <a href="#" class="post-title">Announcing a plan for small teams</a>
+                            <span class="post-date"><span class="sr-only">Published on</span> May 22, 2018</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp">
+                    <div class="card">
+                        <div class="img-place">
+                            <img src="assets/img/work/work-1.jpg" alt="">
+                        </div>
+                        <div class="caption">
+                            <a href="javascript:void(0)" class="post-category">Design</a>
+                            <a href="#" class="post-title">5 basic tips for illustrating</a>
+                            <span class="post-date"><span class="sr-only">Published on</span> May 22, 2018</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center py-3 wow fadeInUp">
+                    <a href="blog-fullbar.html" class="btn btn-theme">See All Post</a>
+                </div>
+            </div>
+        </div>
+    </div> End blog -->
+
+    <!-- Footer -->
+    <footer class="vg-footer">
+        <h1 class="text-center">Social Media</h1>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-3 py-3">
+                    <ul class="list-unstyled row justify-content-center">
+                        <li class="mr-3"><a href="https://www.linkedin.com/in/ibraheem-fatayer-2036801a6/"
+                                target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="https://github.com/ibr7eem99" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- End footer -->
+
+    <script src="service/data_service.js"></script>
+
+    <script src="assets/js/site.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="assets/vendor/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+
+    <script src="assets/vendor/isotope/isotope.pkgd.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"
+        integrity="sha512-NqYds8su6jivy1/WLoW8x1tZMRD7/1ZfhWG/jcRQLOzV1k1rIODCpMgoBnar5QXshKJGV7vi0LXLNXPoFsM5Zg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="assets/vendor/wow/wow.min.js"></script>
+
+    <!-- <script src="assets/vendor/animateNumber/jquery.animateNumber.min.js"></script> -->
+
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+
+    <script src="assets/js/topbar-virtual.js"></script>
+</body>
+
+</html>
