@@ -46,14 +46,14 @@
         <span class="ti-arrow-up"></span>
     </div>
 
-    <header class="vg-page page-home" id="home" style="background-image: url(../assets/img/bg_image_1.jpg)"></header>
+    <header class="vg-page page-home" id="home" style="background-image: url(assets/img/bg_image_1.jpg)"></header>
 
     <div class="vg-page page-about" id="about">
         <div class="container py-5" id="profile"></div>
 
         <div class="container py-5" id="skill">
             <h1 class="text-center fw-normal wow fadeIn">My Skills</h1>
-<div class="row py-3 justify-content-center" id="skills"></div>
+            <div class="row py-3 justify-content-center" id="skills"></div>
         </div>
 
         <div class="container pt-5" id="person-life-time">
@@ -61,7 +61,7 @@
         </div>
     </div>
 
-    <div class="vg-page page-funfact" style="background-image: url(../assets/img/bg_banner.jpg); height: 250px;"></div>
+    <div class="vg-page page-funfact" style="background-image: url(assets/img/bg_banner.jpg); height: 250px;"></div>
 
     <!-- Portfolio page -->
     <div class="vg-page page-portfolio" id="portfolio">
@@ -70,197 +70,75 @@
                 <div class="badge badge-subhead">Portfolio</div>
             </div>
             <h1 class="text-center fw-normal wow fadeInUp">See my work</h1>
-            <div class="filterable-button py-3 wow fadeInUp" data-toggle="selected">
-                <button class="btn btn-theme-outline selected" data-filter="*">All</button>
-                <button class="btn btn-theme-outline" data-filter=".apps">Apps</button>
-                <button class="btn btn-theme-outline" data-filter=".template">Template</button>
-                <button class="btn btn-theme-outline" data-filter=".ios">IOS</button>
-                <button class="btn btn-theme-outline" data-filter=".ui-ux">UI/UX</button>
-                <button class="btn btn-theme-outline" data-filter=".graphic">Graphic</button>
-                <button class="btn btn-theme-outline" data-filter=".wireframes">Wireframes</button>
-            </div>
 
-            <div class="gridder my-3">
-                <div class="grid-item apps wow zoomIn">
-                    <div class="img-place" data-src="assets/img/work/work-1.jpg" data-fancybox
-                        data-caption="<h5 class='fg-theme'>Mobile Travel App</h5> <p>Travel, Discovery</p>">
-                        <img src="assets/img/work/work-1.jpg" alt="">
-                        <div class="img-caption">
-                            <h5 class="fg-theme">Mobile Travel App</h5>
-                            <p>Travel, Discovery</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item template wireframes wow zoomIn">
-                    <div class="img-place" data-src="assets/img/work/work-2.jpg" data-fancybox
-                        data-caption="<h5 class='fg-theme'>Music App</h5> <p>Musics</p>">
-                        <img src="assets/img/work/work-2.jpg" alt="">
-                        <div class="img-caption">
-                            <h5 class="fg-theme">Music App</h5>
-                            <p>Musics</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item apps ios wow zoomIn">
-                    <div class="img-place" data-src="assets/img/work/work-3.jpg" data-fancybox
-                        data-caption="<h5 class='fg-theme'>Gaming Dashboard</h5> <p>Games, Streaming</p>">
-                        <img src="assets/img/work/work-3.jpg" alt="">
-                        <div class="img-caption">
-                            <h5 class="fg-theme">Gaming Dashboard</h5>
-                            <p>Games, Streaming</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item graphic ui-ux wow zoomIn">
-                    <div class="img-place" data-src="assets/img/work/work-4.jpg" data-fancybox
-                        data-caption="<h5 class='fg-theme'>Drugs Delivery App</h5> <p>Health, Drugs</p>">
-                        <img src="assets/img/work/work-4.jpg" alt="">
-                        <div class="img-caption">
-                            <h5 class="fg-theme">Drugs Delivery App</h5>
-                            <p>Health, Drugs</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item apps ios wow zoomIn">
-                    <div class="img-place" data-src="assets/img/work/work-5.jpg" data-fancybox
-                        data-caption="<h5 class='fg-theme'>Musics Discover</h5> <p>Musics, Dashboard</p>">
-                        <img src="assets/img/work/work-5.jpg" alt="">
-                        <div class="img-caption">
-                            <h5 class="fg-theme">Musics Discover</h5>
-                            <p>Musics, Dashboard</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item graphic ui-ux wireframes wow zoomIn">
-                    <div class="img-place" data-src="assets/img/work/work-6.jpg" data-fancybox
-                        data-caption="<h5 class='fg-theme'>Game Streaming</h5> <p>Games, Streaming</p>">
-                        <img src="assets/img/work/work-6.jpg" alt="">
-                        <div class="img-caption">
-                            <h5 class="fg-theme">Game Streaming</h5>
-                            <p>Games, Streaming</p>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- End gridder -->
+            <!-- <div class="filterable-button py-3 wow fadeInUp" id="catagories" data-toggle="selected"></div> -->
+
+            <div class="gridder mt-3" id="projects" style="min-height: 300px;"></div>
+
             <div class="text-center wow fadeInUp">
-                <a href="javascript:void(0)" class="btn btn-theme">Load More</a>
+                <button type="button" class="btn btn-theme" onclick="loadMore(this)">Load More</button>
             </div>
         </div>
     </div> <!-- End Portfolio page -->
 
     <!-- Testimonial -->
-    <div class="vg-page page-testimonial">
+    <!-- <div class="vg-page page-testimonial" id="testimonial">
         <div class="container">
-            <h1 class="text-center fw-normal wow fadeInUp">What Clients are Saying</h1>
-            <div class="row justify-content-center mt-5 wow fadeInUp">
-                <div class="col-md-9">
-                    <div class="owl-carousel testi-carousel">
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="img-place">
-                                        <img src="assets/img/testimonials/testimonials_1.jpg" alt="">
+            <h3 class="text-center fw-normal wow fadeInUp">Tahaluf Al Emarat trainers Notes</h1>
+                <div class="row justify-content-center mt-5 wow fadeInUp">
+                    <div class="col-md-9">
+                        <div class="owl-carousel testi-carousel">
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="img-place">
+                                            <img src="assets/img/testimonials/testimonials 1.png" alt="">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="caption">
-                                        <div class="testi-content">There are many variations of passages of Lorem Ipsum
-                                            available, but the majority have suffered</div>
-                                        <div class="testi-info">
-                                            <div class="thumb-profile">
-                                                <img src="assets/img/testimonials/testimonials_1.jpg" alt="">
-                                            </div>
-                                            <div class="tagline">
-                                                <h5 class="mb-0">Satria Nugraha</h5>
-                                                <span class="text-muted">CEO Nutshell</span>
-                                            </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="img-place">
+                                            <img src="assets/img/testimonials/testimonials 2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="img-place">
+                                            <img src="assets/img/testimonials/testimonials 3.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="img-place">
+                                            <img src="assets/img/testimonials/testimonials 4.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="img-place">
+                                            <img src="assets/img/testimonials/testimonials 5.png" alt="">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="img-place">
-                                        <img src="assets/img/testimonials/testimonials_2.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="caption">
-                                        <div class="testi-content">Lorem ipsum, dolor sit amet consectetur adipisicing
-                                            elit. Saepe natus expedita ab facilis ut, animi explicabo amet. Voluptatibus
-                                            possimus iste enim, doloremque, fugiat accusamus nisi optio fugit ratione
-                                            expedita harum?</div>
-                                        <div class="testi-info">
-                                            <div class="thumb-profile">
-                                                <img src="assets/img/testimonials/testimonials_2.jpg" alt="">
-                                            </div>
-                                            <div class="tagline">
-                                                <h5 class="mb-0">Selena Arrini</h5>
-                                                <span class="text-muted">CEO BigTree</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </div>
         </div>
-    </div> <!-- End testimonial -->
-
-    <!-- Blog -->
-    <!-- <div class="vg-page page-blog" id="blog">
-        <div class="container">
-            <div class="text-center">
-                <div class="badge badge-subhead wow fadeInUp">Blog</div>
-            </div>
-            <h1 class="text-center fw-normal wow fadeInUp">Latest Post</h1>
-            <div class="row post-grid">
-                <div class="col-md-6 col-lg-4 wow fadeInUp">
-                    <div class="card">
-                        <div class="img-place">
-                            <img src="assets/img/work/work-9.jpg" alt="">
-                        </div>
-                        <div class="caption">
-                            <a href="javascript:void(0)" class="post-category">Technology</a>
-                            <a href="#" class="post-title">Invision design forward fund</a>
-                            <span class="post-date"><span class="sr-only">Published on</span> May 22, 2018</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp">
-                    <div class="card">
-                        <div class="img-place">
-                            <img src="assets/img/work/work-6.jpg" alt="">
-                        </div>
-                        <div class="caption">
-                            <a href="javascript:void(0)" class="post-category">Business</a>
-                            <a href="#" class="post-title">Announcing a plan for small teams</a>
-                            <span class="post-date"><span class="sr-only">Published on</span> May 22, 2018</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp">
-                    <div class="card">
-                        <div class="img-place">
-                            <img src="assets/img/work/work-1.jpg" alt="">
-                        </div>
-                        <div class="caption">
-                            <a href="javascript:void(0)" class="post-category">Design</a>
-                            <a href="#" class="post-title">5 basic tips for illustrating</a>
-                            <span class="post-date"><span class="sr-only">Published on</span> May 22, 2018</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 text-center py-3 wow fadeInUp">
-                    <a href="blog-fullbar.html" class="btn btn-theme">See All Post</a>
-                </div>
-            </div>
-        </div>
-    </div> End blog -->
+    </div> -->
+    <!-- End testimonial -->
 
     <!-- Footer -->
     <footer class="vg-footer">
@@ -277,7 +155,8 @@
                 </div>
             </div>
         </div>
-    </footer> <!-- End footer -->
+    </footer>
+    <!-- End footer -->
 
     <script src="service/data_service.js"></script>
 
